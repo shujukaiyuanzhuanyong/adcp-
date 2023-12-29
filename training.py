@@ -125,7 +125,7 @@ if __name__ == '__main__':
         print("该epoch的损失函数值为:" + str(score))
         
         # 保存模型
-    torch.save(model, "./model/BP_jerk.pth") 
+    torch.save(model, "./model/Attention_acc.pth") 
 
 
     # 训练完画图
@@ -133,4 +133,4 @@ if __name__ == '__main__':
     fig = plt.figure()
     plt.plot(x, y, marker='o', markersize=4)
     plt.xticks(x)
-    plt.savefig("./result/MSEloss_jerk.png")
+    plt.savefig("./result/MSEloss_acc.png")
